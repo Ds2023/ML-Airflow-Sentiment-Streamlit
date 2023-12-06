@@ -118,6 +118,9 @@ services:
     command: webserver
     ports:
       - "8080:8080"
+    environment:
+      AWS_ACCESS_KEY_ID: "AKIA3YJY5LWFUUSONFK2"
+      AWS_SECRET_ACCESS_KEY: "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"
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
       interval: 30s
