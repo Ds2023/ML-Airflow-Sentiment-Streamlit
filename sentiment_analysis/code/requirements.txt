@@ -2,6 +2,7 @@ streamlit
 nltk
 seaborn
 plotly
+wordcloud
 # python
 # nltk
 # pandas
