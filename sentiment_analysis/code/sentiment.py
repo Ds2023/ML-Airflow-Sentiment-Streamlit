@@ -24,8 +24,8 @@ nltk.download('averaged_perceptron_tagger')
 
 def download_from_bucket():
     
-    access_key = 'AKIA3YJY5LWFUUSONFK2'
-    secret_key = '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'
+    access_key = os.environ.get('AWS_ACCESS_KEY_ID') 
+    secret_key = os.environ.get('AWS_SECRET_ACCESS_KEY') 
 
     s3 = boto3.resource(
         service_name='s3',
