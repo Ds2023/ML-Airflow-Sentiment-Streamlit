@@ -1,6 +1,7 @@
 streamlit
 nltk
 seaborn
+plotly
 # python
 # nltk
 # pandas
