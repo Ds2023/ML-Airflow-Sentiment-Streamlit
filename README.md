@@ -12,8 +12,8 @@ Following this, we'll execute sentiment analysis on the gathered data. Finally, 
 Components:
 
 - **Beautifoul Soup**: We'll utilise this library to scrape data from an airline reviews website.
-- **Apache Airflow**: Responsible for orchestrating the pipeline and storing fetched data in a PostgreSQL database.
-- **Apache Kafka and Zookeeper**: Used for streaming data from PostgreSQL to the processing engine.
-- **Control Center and Schema Registry**: Helps in monitoring and schema management of our Kafka streams.
-- **Apache Spark**: For data processing with its master and worker nodes.
-- **Cassandra**: Where the processed data will be stored.
+- **Docker**: Facilitates the execution of airflow in a containerized environment.
+- **Apache Airflow**: Responsible for orchestrating the pipeline, carrying out scheduled scraping and uploading the raw data into a s3 bucket.
+- **S3 Bucket**: Allows for storage of the raw data.
+- **NLTK Library**: Facilitates text processing for sentiment analysis.
+- **Streamlit**: Allows the deployment of an interactive dashboard relaying the analysis findings. 
