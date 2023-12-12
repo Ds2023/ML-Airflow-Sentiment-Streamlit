@@ -45,3 +45,17 @@ Components:
     open http://localhost:8080
    ```
 ## AWS S3 Bucket Setup
+1. Download [AWS CLI](https://aws.amazon.com/cli/)
+2. Authenticate the AWS CLI
+   ```bash
+    aws configure
+   ```
+3. Create a s3 bucket
+   ```bash
+    aws s3api create-bucket --bucket <bucket-name> --region <region> --create-bucket-configuration LocationConstraint=<region>
+   ```
+4. Verify bucket creation
+   ```bash
+    aws s3 ls
+   ```
+## Streamlit Setup
