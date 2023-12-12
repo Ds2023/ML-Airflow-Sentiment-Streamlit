@@ -3,6 +3,7 @@ nltk
 seaborn
 plotly
 wordcloud
+boto3
 # python
 # nltk
 # pandas
