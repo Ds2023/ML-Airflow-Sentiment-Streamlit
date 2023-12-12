@@ -16,4 +16,32 @@ Components:
 - **Apache Airflow**: Responsible for orchestrating the pipeline, carrying out scheduled scraping and uploading the raw data into a s3 bucket.
 - **S3 Bucket**: Allows for storage of the raw data.
 - **NLTK Library**: Facilitates text processing for sentiment analysis.
-- **Streamlit**: Allows the deployment of an interactive dashboard relaying the analysis findings. 
+- **Streamlit**: Allows the deployment of an interactive dashboard relaying the analysis findings.
+
+# Getting Started
+## Docker Airflow Setup
+1. Download [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+2. Clone the repository.
+   ```bash
+    git clone [https://github.com/airscholar/RedditDataEngineering.git](https://github.com/Ds2023/ML-Airflow-Sentiment-Streamlit)
+   ```
+3. cd into the repository
+4. Navigate to the docker-compose.yaml file and adjuct environment variables as desired.
+5. Initialize airflow in the docker container.
+   ```bash
+    docker compose airflow-init
+   ```
+6. Starting the containers
+   ```bash
+    docker-compose up 
+   ```
+7. Confirm all containers are running.
+   ```bash
+    docker ps
+   ```
+  
+8. Launch the Airflow web UI.
+   ```bash
+    open http://localhost:8080
+   ```
+## AWS S3 Bucket Setup
