@@ -4,6 +4,7 @@ seaborn
 plotly
 wordcloud
 boto3
+matplotlib
 # python
 # nltk
 # pandas
