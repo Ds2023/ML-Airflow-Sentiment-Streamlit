@@ -1,4 +1,5 @@
 streamlit
+nltk
 # python
 # nltk
 # pandas
