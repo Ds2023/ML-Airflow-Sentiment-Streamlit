@@ -3,15 +3,12 @@ import nltk
 import pandas as pd
 import seaborn as sns 
 import matplotlib.pyplot as plt
-import datetime as dt
 import plotly.express as px
 from wordcloud import WordCloud
 import re
 import boto3
 import os
-import pandas as pd
 from nltk.sentiment import SentimentIntensityAnalyzer
-from tqdm.notebook import tqdm
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
