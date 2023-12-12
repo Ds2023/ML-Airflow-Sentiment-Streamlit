@@ -1,8 +1,8 @@
 streamlit
-python
-nltk
-pandas
-seaborn
-matplotlib-base
-regex
-boto3 
+# python
+# nltk
+# pandas
+# seaborn
+# matplotlib-base
+# regex
+# boto3 
