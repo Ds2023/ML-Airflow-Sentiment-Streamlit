@@ -59,3 +59,15 @@ Components:
     aws s3 ls
    ```
 ## Streamlit Setup
+### Prerequisites
+- Ensure python is installed.
+- Create a virtual environment
+1. Install streamlit.
+   ```bash
+    pip install streamlit 
+   ```
+2. Naivgate to the directory where the script is located.
+3. Run the streamlit app.
+   ```bash
+    streamlit run app.py
+   ```
