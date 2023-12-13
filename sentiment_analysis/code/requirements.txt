@@ -5,10 +5,3 @@ plotly
 wordcloud
 boto3
 matplotlib
-# python
-# nltk
-# pandas
-# seaborn
-# matplotlib-base
-# regex
-# boto3 

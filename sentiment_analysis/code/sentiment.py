@@ -23,7 +23,7 @@ def download_from_bucket():
     
     access_key = st.secrets["AWS_ACCESS_KEY"]
     secret_key = st.secrets['AWS_SECRET_KEY'] 
-# secret_key = os.environ.get('AWS_SECRET_ACCESS_KEY')
+
     s3 = boto3.resource(
         service_name='s3',
         region_name='us-east-1',
@@ -41,10 +41,6 @@ def extract_text_after_pipe(df):
     df['Text'] = df['Review'].apply(lambda x: x.split("|")[1].strip() if "|" in str(x) else x.strip())
     return df
 
-# data = download_from_bucket()
-# print(data.head())
-# print(data.shape)
-# print(data.columns)
 
 def process_text(text):
     
@@ -142,7 +138,6 @@ def load_data():
     return data
 
 df = load_data()
-# st.write(df)
 
 # Get the min and max date
 col1, col2 = st.columns((2))
