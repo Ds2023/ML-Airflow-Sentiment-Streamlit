@@ -71,3 +71,11 @@ Components:
    ```bash
     streamlit run app.py
    ```
+# Airflow Dag
+<img src="airflow_dag.png"
+
+# Dashboard
+<img src="dashboard1.png">
+<img src="dashboard2.png">
+
+[Dashboard Link](https://end-to-end-sentiment-analysis.streamlit.app/)
