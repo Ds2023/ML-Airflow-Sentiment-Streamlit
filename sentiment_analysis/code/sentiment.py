@@ -31,7 +31,7 @@ def download_from_bucket():
         aws_secret_access_key=secret_key
     )
 
-    obj = s3.Bucket("trial-dag-bucket").Object("reviews_data.csv").get()
+    obj = s3.Bucket("trial-dag-bucket").Object("trial2_data.csv").get()
     data = pd.read_csv(obj['Body'],index_col = 0)
 
     return data
