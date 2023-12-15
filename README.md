@@ -71,3 +71,14 @@ Components:
    ```bash
     streamlit run app.py
    ```
+# Airflow Dag
+<img src="airflow_dag.png">
+
+# Web App Dashboard
+<img src="dashboard1.png">
+<img src="dashboard2.png">
+
+[Web App Link](https://end-to-end-sentiment-analysis.streamlit.app/)
+
+# Project Presentation
+[Presentation Link](https://www.canva.com/design/DAF24TaSuA4/HHYZuuAEkoFX2ZMYpd-few/view?utm_content=DAF24TaSuA4&utm_campaign=designshare&utm_medium=link&utm_source=editor)
