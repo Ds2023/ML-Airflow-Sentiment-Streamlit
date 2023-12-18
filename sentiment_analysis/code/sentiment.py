@@ -140,11 +140,12 @@ def load_data():
 df = load_data()
 
 # Get the min and max date
-col1, col2 = st.columns((2))
+
 startDate = df["Date"].min()
 endDate = df["Date"].max()
+col1, col2 = st.columns((2))
 with col1:
-    date1 = pd.to_datetime(st.date_input("Start Date", startDate))
+    date1 = pd.to_datetime(st.date_input("Start Date", startDate,max_value=endDate))
     st.write("Review Start Date: ",startDate)
 with col2:
     date2 = pd.to_datetime(st.date_input("End Date", endDate))
@@ -235,6 +236,7 @@ with col2:
 # Score Distribution
 fig = px.histogram(df, x='Sentiment_Score', title='Score Distribution')
 st.plotly_chart(fig,use_container_width=True)
+
 
 # Data Preview
 with st.expander("Data Preview"):    
